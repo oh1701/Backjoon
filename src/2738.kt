@@ -12,9 +12,11 @@ N과 M은 100보다 작거나 같고, 행렬의 원소는 절댓값이 100보다
 
 입력
 3 3
+
 1 1 1
 2 2 2
 0 1 0
+
 3 3 3
 4 4 4
 5 5 100
@@ -25,6 +27,35 @@ N과 M은 100보다 작거나 같고, 행렬의 원소는 절댓값이 100보다
 5 6 100
 */
 
-fun `2738`(){
+fun `2738번-행렬덧셈`(){
+    val br = System.`in`.bufferedReader()
+    val bw = System.out.bufferedWriter()
+    val baseToken = StringTokenizer(br.readLine())
+    val n = baseToken.nextToken().toInt()
+    val m = baseToken.nextToken().toInt()
+    val arr = Array(n){ IntArray(m) }
 
+    repeat(2){
+        for(i in 0..< n){
+            val token = StringTokenizer(br.readLine())
+
+            for(j in 0..< m){
+                arr[i][j] += token.nextToken().toInt()
+            }
+        }
+    }
+
+    val sb = StringBuilder()
+
+    for(i in 0..< n){
+        for(j in 0..< m){
+            sb.append(arr[i][j].toString() + " ")
+        }
+        sb.append("\n")
+    }
+
+    bw.write(sb.toString())
+    bw.flush()
+    bw.close()
+    br.close()
 }
