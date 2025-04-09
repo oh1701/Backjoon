@@ -1,5 +1,5 @@
-import bruteforce.`2839-설탕 배달`
+import sort.`2751-수 정렬하기2`
 
 fun main() {
-    `2839-설탕 배달`()
+    `2751-수 정렬하기2`()
 }
