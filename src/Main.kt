@@ -1,5 +1,5 @@
-import bruteforce.`2231-분해합`
+import bruteforce.`2839-설탕 배달`
 
 fun main() {
-    `2231-분해합`()
+    `2839-설탕 배달`()
 }
