@@ -35,5 +35,20 @@ package sort
  * 7
  * */
 fun `10989-수 정렬하기3`(){
+    val br = System.`in`.bufferedReader()
+    val bw = System.out.bufferedWriter()
+    val n = br.readLine().toInt()
+    val arr = IntArray(10_001)
 
+    repeat(n){ arr[br.readLine().toInt()]++ }
+
+    for(i in arr.indices){
+        repeat(arr[i]){
+            bw.write("${i}\n")
+        }
+    }
+
+    br.close()
+    bw.flush()
+    bw.close()
 }
