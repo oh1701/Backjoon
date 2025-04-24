@@ -1,5 +1,5 @@
-import set_map.`11478-서로 다른 부분 문자열의 개수`
+import divisors_multiples_primes.`17103-골드바흐 파티션`
 
 fun main() {
-    `11478-서로 다른 부분 문자열의 개수`()
+    `17103-골드바흐 파티션`()
 }
