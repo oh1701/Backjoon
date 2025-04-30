@@ -1,5 +1,5 @@
-import stack_queue_deque.`24511-queuestack`
+import combinatorics.`1010-다리놓기`
 
 fun main() {
-    `24511-queuestack`()
+    `1010-다리놓기`()
 }
