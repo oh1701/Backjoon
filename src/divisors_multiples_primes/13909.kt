@@ -1,5 +1,7 @@
 package divisors_multiples_primes
 
+import kotlin.math.sqrt
+
 /**
  * 서강대학교 컴퓨터공학과 실습실 R912호에는 현재 N개의 창문이 있고 또 N명의 사람이 있다.
  * 1번째 사람은 1의 배수 번째 창문을 열려 있으면 닫고 닫혀 있으면 연다.
@@ -30,13 +32,6 @@ package divisors_multiples_primes
  * */
 fun `13909-창문 닫기`(){
     val br = System.`in`.bufferedReader()
-    val bw = System.out.bufferedWriter()
-    val n = br.readLine().toInt()
-    val arr = BooleanArray(2_100_000_001){ false }
-
-    repeat(n){ i ->
-        for(j in i .. n step i){
-            arr[j] = !arr[j]
-        }
-    }
+    val n = br.readLine().toLong()
+    println(sqrt(n.toDouble()).toLong())
 }

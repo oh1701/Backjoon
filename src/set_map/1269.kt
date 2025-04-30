@@ -50,5 +50,5 @@ fun `1269-대칭 차집합`() {
     br.close()
 }
 
-fun BufferedReader.getStringToken() = StringTokenizer(readLine())
-fun StringTokenizer.getNextIntToken() = nextToken().toInt()
+private fun BufferedReader.getStringToken() = StringTokenizer(readLine())
+private fun StringTokenizer.getNextIntToken() = nextToken().toInt()

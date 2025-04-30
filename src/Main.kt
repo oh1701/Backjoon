@@ -1,5 +1,5 @@
-import divisors_multiples_primes.`17103-골드바흐 파티션`
+import stack_queue_deque.`24511-queuestack`
 
 fun main() {
-    `17103-골드바흐 파티션`()
+    `24511-queuestack`()
 }
