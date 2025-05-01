@@ -1,5 +1,5 @@
-import combinatorics.`1010-다리놓기`
+import recursion.`10870-피보나치 수 5`
 
 fun main() {
-    `1010-다리놓기`()
+    `10870-피보나치 수 5`()
 }
