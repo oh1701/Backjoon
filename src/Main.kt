@@ -1,5 +1,5 @@
-import recursion.`10870-피보나치 수 5`
+import recursion.`4779-칸토어 집합`
 
 fun main() {
-    `10870-피보나치 수 5`()
+    `4779-칸토어 집합`()
 }
