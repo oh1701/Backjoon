@@ -1,5 +1,5 @@
-import backtracking.`15652-N과 M(4)`
+import backtracking.`2580-스도쿠`
 
 fun main(){
-    `15652-N과 M(4)`()
+    `2580-스도쿠`()
 }
