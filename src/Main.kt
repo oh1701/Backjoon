@@ -1,5 +1,5 @@
-import backtracking.`2580-스도쿠`
+import fibonacci.`24416-알고리즘 수업 - 피보나치 수(1)`
 
 fun main(){
-    `2580-스도쿠`()
+    `24416-알고리즘 수업 - 피보나치 수(1)`()
 }
