@@ -1,4 +1,4 @@
-package fibonacci
+package dynamic_programming
 
 /**
  * 오늘도 서준이는 동적 프로그래밍 수업 조교를 하고 있다.
@@ -50,12 +50,12 @@ fun `24416-알고리즘 수업 - 피보나치 수(1)`(){
     br.close()
 }
 
-fun fib(n: Int): Int {
+private fun fib(n: Int): Int {
     return if(n == 1 || n == 2) 1
     else fib(n - 1) + fib(n - 2)
 }
 
-fun fibonacci(n: Int): Int {
+private fun fibonacci(n: Int): Int {
     if (n <= 2) return 1
 
     val f = IntArray(n + 1)
