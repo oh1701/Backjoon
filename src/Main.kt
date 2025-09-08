@@ -1,5 +1,5 @@
-import prefix_sum.`10986-나머지 합`
+import greedy.`13305-주유소`
 
 fun main(){
-    `10986-나머지 합`()
+    `13305-주유소`()
 }
