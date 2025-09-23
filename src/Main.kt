@@ -1,5 +1,5 @@
-import greedy.`13305-주유소`
+import binary_search.`1920-수 찾기`
 
 fun main(){
-    `13305-주유소`()
+    `1920-수 찾기`()
 }
