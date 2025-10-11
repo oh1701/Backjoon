@@ -25,18 +25,35 @@ import java.util.StringTokenizer
  * 0
  * 1
  * */
+
+/*
+* N = 최대 10만, M = 최대 10만
+* 시간 제한 1초이므로 1억번 이내에 실행해야한다. 즉, O(n^2) 는 불가능하다.
+* */
 fun `1920-수 찾기`(){
     val br = System.`in`.bufferedReader()
     val bw = System.out.bufferedWriter()
-    // -231 ~ 230. 0포함해서 462개
     val stringBuilder = StringBuilder()
-    val arr = BooleanArray(462){ false }
     val n = br.readLine().toInt()
-    val nToken = StringTokenizer(br.readLine())
-    val nArr = IntArray(n){ nToken.nextToken().toInt() }
-    val m = br.readLine().toInt()
-    val mToken = StringTokenizer(br.readLine())
-    val mArr = IntArray(m){ mToken.nextToken().toInt() }
-
+    val nNumberToken = StringTokenizer(br.readLine())
+    val nArr = IntArray(n){ nNumberToken.nextToken().toInt() }
     nArr.sort()
+    val m = br.readLine().toInt()
+    val mNumberToken = StringTokenizer(br.readLine())
+    val mArr = IntArray(m){ mNumberToken.nextToken().toInt() }
+
+    for(i in mArr.indices){
+        val index = nArr.binarySearch(mArr[i])
+
+        if(index < 0){
+            stringBuilder.appendLine("0")
+        } else {
+            stringBuilder.appendLine("1")
+        }
+    }
+
+    bw.write(stringBuilder.trim().toString())
+    bw.flush()
+    bw.close()
+    br.close()
 }

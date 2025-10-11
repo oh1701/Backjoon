@@ -27,11 +27,6 @@ import kotlin.math.min
  * 예제 출력 1
  * 4
  *
- * 예제 입력 2
- * 9
- * 10 20 10 30 25 27 40 30 50
- * 예제 출력 2
- * 5
  * */
 fun `11053-가장 긴 증가하는 부분 수열`(){
     val br = System.`in`.bufferedReader()

@@ -1,5 +1,5 @@
-import binary_search.`1920-수 찾기`
+import binary_search.`12015-가장 긴 증가하는 부분 수열 2`
 
 fun main(){
-    `1920-수 찾기`()
+    `12015-가장 긴 증가하는 부분 수열 2`()
 }
