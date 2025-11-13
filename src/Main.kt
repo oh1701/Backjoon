@@ -1,5 +1,5 @@
-import graph_and_sequence.`1707-이분 그래프`
 
+data class Name(val name: String)
 fun main(){
-    `1707-이분 그래프`()
+    var a = Name("철수")
 }

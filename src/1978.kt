@@ -43,12 +43,3 @@ fun `1978-소수찾기`(){
     bw.close()
     br.close()
 }
-
-interface A {
-    fun a() = 1
-}
-
-class B : A {
-
-
-}
